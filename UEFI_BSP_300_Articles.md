@@ -9,40 +9,17 @@
 2. **风格定位**：讲概念不讲实现细节，紧跟网络热梗、幽默风趣，降低硬核技术的阅读门槛
 3. **多平台适配**：每篇文章同时适配知乎（专栏）、掘金（文章）、CSDN（博客）、GitHub（仓库 markdown）
 4. **文件存储**：每篇文章创建在当前目录下，文件名格式 `001_UEFI与EDK2最通俗的理解.md`
-5. **自动发布**：PostFlow 发掘金+CSDN，知乎手动复制粘贴，GitHub 直接 git push
-6. **发布频率**：每天 1 篇，避免触发平台风控
+5. **发布方式**：GitHub 直接 git push，其他平台手动发布
+6. **发布频率**：每天 1 篇
 
-## 自动发布工具方案
+## 发布平台链接
 
-### 推荐：PostFlow（掘金/CSDN/知乎/小红书）
-
-| 项目 | 说明 |
-|------|------|
-| GitHub | https://github.com/JessAI2099/PostFlow |
-| 原理 | Playwright 浏览器自动化，模拟真实用户操作 |
-| 优点 | 不需要 API Key，只需首次登录一次 |
-| 支持平台 | 掘金、CSDN、知乎、小红书 |
-| 依赖 | Python 3.8+、playwright、pillow |
-
-```bash
-# 安装
-pip install playwright pillow
-python -m playwright install chromium
-
-# 发布
-python publish_all.py -m metadata.json -p juejin,csdn,zhihu
-```
-
-### 备选：md-publisher（CSDN/掘金/知乎）
-
-| 项目 | 说明 |
-|------|------|
-| GitHub | https://github.com/koffuxu/md-publisher |
-| 原理 | Playwright + browser-cookie3 自动提取 Cookie |
-| 特点 | 直接读取 Markdown 文件，支持封面图 |
-| 注意 | 需要 macOS（剪贴板依赖 pyobjc），Windows 需适配 |
-
-> GitHub 发布：直接 git push 到仓库即可，无需额外工具。
+| 平台 | 发布入口 |
+|------|---------|
+| **GitHub** | https://github.com/kebin988/UEFI-BSP-300 (git push 自动更新) |
+| **掘金** | https://juejin.cn/editor/drafts/new?v=2 |
+| **CSDN** | https://editor.csdn.net/md |
+| **知乎** | https://zhuanlan.zhihu.com/write |
 
 ---
 

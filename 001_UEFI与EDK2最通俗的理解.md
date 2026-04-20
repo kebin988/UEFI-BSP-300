@@ -201,4 +201,4 @@ CPU 从 SPI Flash 读取固件
 >
 > 🏷️ 标签：UEFI、EDK2、固件开发、BIOS、BSP、芯片原厂
 >
-> 📁 GitHub：[UEFI-BSP-300](https://github.com/icebuling/UEFI-BSP-300)
+> 📁 GitHub：[UEFI-BSP-300](https://github.com/kebin988/UEFI-BSP-300)
