@@ -1,0 +1,7 @@
+# 只跟踪文章 Markdown 文件和目录文件
+*
+!.gitignore
+!UEFI_BSP_300_Articles.md
+!0[0-9][0-9]_*.md
+![1-2][0-9][0-9]_*.md
+!300_*.md
